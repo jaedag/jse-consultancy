@@ -16,7 +16,7 @@ export default function Home() {
         <div className="text-3xl md:text-7xl font-bold text-center mb-4">
         JSE Intelligence & Security Consultancy
         </div>
-            <div className="text-center mt-6">
+            <div className="text-center mt-10">
               <TextEffect className="font-extralight text-sm md:text-4xl" words="Thinking of outsourcing your company's intelligence collection & analysis to help protect your people, brand & assets for a competitive rate? Then look no further..." />
         </div>
           </MaxWidthWrapper>
