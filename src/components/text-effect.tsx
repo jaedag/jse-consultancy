@@ -7,7 +7,7 @@ export default function TextEffect({
   words,
   className,
   filter = true,
-  duration = 0.5,
+  duration = 0.15,
 }: {
   words: string;
   className?: string;
@@ -25,7 +25,7 @@ export default function TextEffect({
       },
       {
         duration: duration ? duration : 1,
-        delay: stagger(0.2),
+        delay: stagger(0.1),
       }
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps

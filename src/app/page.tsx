@@ -5,6 +5,7 @@ import ImageCard from "@/components/image-card";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import { Quote } from "@/components/quote";
 import SlideInText from "@/components/slide-in-text";
+import TextEffect from "@/components/text-effect";
 
 
 const cardData = [
@@ -55,7 +56,7 @@ export default function Home() {
         JSE Intelligence & Security Consultancy
         </div>
             <div className="text-center mt-10">
-              <p className="font-extralight text-sm md:text-4xl text-white"> Thinking of outsourcing your company&apos;s intelligence collection & analysis to help protect your people, brand & assets for a competitive rate? Then look no further...</p>
+              <TextEffect className="font-extralight text-sm md:text-4xl text-white" words="Thinking of outsourcing your company&apos;s intelligence collection & analysis to help protect your people, brand & assets for a competitive rate? Then look no further..." />
         </div>
           </MaxWidthWrapper>
         </HeroMapBackground>
