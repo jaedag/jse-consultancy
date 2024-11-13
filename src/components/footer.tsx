@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Spacer from './spacer'
 import Link from 'next/link'
-import { BiLogoGmail } from 'react-icons/bi'
 import { FaXTwitter } from 'react-icons/fa6'
+import { Mail } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -22,10 +22,10 @@ export default function Footer() {
       <Spacer />
       <div className="flex gap-4">
         <Link href="mailto:info@jseconsultancyis.com">
-          <BiLogoGmail size={20} />
+          <Mail size={40} />
         </Link>
-        <Link href={' '}>
-          <FaXTwitter size={20} />
+        <Link href={'https://twitter.com/JSE_Consultancy'}>
+          <FaXTwitter size={40} />
         </Link>
       </div>
     </footer>
