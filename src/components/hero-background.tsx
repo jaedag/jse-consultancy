@@ -1,7 +1,8 @@
 "use client";
 import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";
-import { motion } from "framer-motion"
+import SlideInText from "./slide-in-text";
+
 
 interface HeroBackgroundProps extends React.HTMLProps<HTMLDivElement> {
   children: ReactNode;
@@ -48,18 +49,9 @@ export const HeroBackground = ({
             )}
           ></div>
         </div>
-        <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
-      >
-        {children}
-        </motion.div>
+        <SlideInText>
+            {children}
+            </SlideInText>
       </div>
     </main>
   );
