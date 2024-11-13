@@ -15,7 +15,7 @@ export default function ImageCard ({
    
     return (
         <div
-          className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 min-w-32 overflow-hidden flex flex-col items-start justify-start relative z-10 cursor-pointer shadow-lg"
+          className="rounded-3xl bg-gray-100 h-80 w-72 md:h-[40rem] md:w-96  overflow-hidden flex flex-col items-start justify-start relative z-10 cursor-pointer shadow-lg"
         >
           <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/80 via-transparent to-transparent z-30 pointer-events-none" />
           <div className="relative z-40 p-8 group">

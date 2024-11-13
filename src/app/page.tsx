@@ -5,7 +5,6 @@ import ImageCard from "@/components/image-card";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import { Quote } from "@/components/quote";
 import SlideInText from "@/components/slide-in-text";
-import TextEffect from "@/components/text-effect";
 
 
 const cardData = [
@@ -56,7 +55,7 @@ export default function Home() {
         JSE Intelligence & Security Consultancy
         </div>
             <div className="text-center mt-10">
-              <TextEffect className="font-extralight text-sm md:text-4xl text-white" words="Thinking of outsourcing your company's intelligence collection & analysis to help protect your people, brand & assets for a competitive rate? Then look no further..." />
+              <p className="font-extralight text-sm md:text-4xl text-white"> Thinking of outsourcing your company&apos;s intelligence collection & analysis to help protect your people, brand & assets for a competitive rate? Then look no further...</p>
         </div>
           </MaxWidthWrapper>
         </HeroMapBackground>
@@ -67,7 +66,7 @@ export default function Home() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-black dark:text-white">
+            <h1 className="text-4xl font-semibold text-black">
               Our Priorities <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
                 The 3A&apos;s
@@ -76,7 +75,7 @@ export default function Home() {
           </>
         }
           >
-            <div className="flex justify-center gap-10 flex-wrap">
+            <div className="flex justify-center gap-10 flex-wrap mt-5">
               {cardData.map((card, index) => (
                 <ImageCard key={index} card={card} />
               ))}
@@ -88,10 +87,10 @@ export default function Home() {
       <section>
         <SlideInText>
           <MaxWidthWrapper>
-          <h1 className="text-4xl md:text-6xl font-semibold text-black dark:text-white text-center mb-10">
+          <h1 className="text-4xl md:text-6xl font-semibold text-black  text-center my-5">
             Our Promise
           </h1>
-          <p className="text-black dark:text-white">
+          <p className="text-black">
             JSE Intelligence & Security Consultancy promises to be reliable, dependable, attention - to - detail, flexible, competitive, and most importantly adaptable to suit your business&apos;s requirement by offering the best services. This is a forward-looking consulting firm with extensive network across various Governments Departments; Corporate World; Media; NGOs; and Academia in most of the challenging terrains worldwide, and therefore able to offer steadfast service. 
           </p>
           </MaxWidthWrapper>
