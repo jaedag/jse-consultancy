@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Spacer from './spacer'
 import Link from 'next/link'
-import { BiLogoGmail } from 'react-icons/bi'
 import { FaXTwitter } from 'react-icons/fa6'
 import { Mail } from 'lucide-react'
 
