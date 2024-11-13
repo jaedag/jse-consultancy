@@ -10,10 +10,13 @@ export default function Footer() {
       <Image alt="logo" src="/logo.webp" width={100} height={100} />
       <Spacer />
       <div className=" flex flex-col md:flex-row gap-4 items-center justify-center">
-        <p className="text-md">
-          <span className="font-bold">Contact: </span>
-          info@jseconsultancyis.com
-        </p>
+        <a href="mailto:info@jsconsultancyis.com">
+          {' '}
+          <p className="text-md">
+            <span className="font-bold">Contact: </span>
+            info@jseconsultancyis.com
+          </p>
+        </a>
         <p className="text-sm">Copyright 2023 © All Rights Reserved.</p>
       </div>
       <Spacer />

@@ -8,12 +8,14 @@ export const TextGenerateEffect = ({
   className,
   filter = true,
   duration = 0.5,
+  staggerNum = 0.1,
   onAnimationComplete,
 }: {
   words: string
   className?: string
   filter?: boolean
   duration?: number
+  staggerNum?: number
   onAnimationComplete?: () => void
 }) => {
   const [scope, animate] = useAnimate()
@@ -27,7 +29,7 @@ export const TextGenerateEffect = ({
       },
       {
         duration: duration ? duration : 1,
-        delay: stagger(0.1),
+        delay: stagger(staggerNum),
         onComplete: onAnimationComplete,
       }
     )
@@ -56,7 +58,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn('font-bold', className)}>
       <div className="mt-4">
-        <div className=" dark:text-white text-white text-2xl leading-snug tracking-wide">
+        <div className="dark:text-white text-white  leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>
