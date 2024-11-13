@@ -1,29 +1,69 @@
-import Card from "@/components/card";
-import { ContainerScroll } from "@/components/container-scroll";
 
-import { HeroBackground } from "@/components/hero-background";
+import { ContainerScroll } from "@/components/container-scroll";
+import HeroMapBackground from "@/components/hero-map-background";
+import ImageCard from "@/components/image-card";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
+import { Quote } from "@/components/quote";
 import SlideInText from "@/components/slide-in-text";
 import TextEffect from "@/components/text-effect";
 
 
+const cardData = [
+  {
+    title: "Assessment",
+    description: "Intelligence & Threat assessment",
+    src: "/assets/pexels-photo-5256523.webp",
+    points: [
+      "Operational",
+      "Tactical",
+      "Strategic"
+    ]
+  },
+  {
+    title: "Advisory",
+    description: "Sub-Saharan Africa Affairs Specialism",
+    src: "/assets/free-photo.jpeg",
+    points: [
+      "Political",
+      "Economic",
+      "Social",
+      "Technological",
+      "Environmental",
+      "Legal",
+      "Organisational"
+    ]
+  },
+  {
+    title: "Assistance",
+    description: "Consulting / supporting services",
+    src: "/assets/pexels-photo-12903148.webp",
+    points: [
+      "Setting up Threat Assessment Team",
+      "Intelligence & Security Assessment Training",
+      "Evolving Global Security Landscape (country specific)",
+      "Government Policies (country specific) & Impact on Business Activities"
+    ]
+  }
+];
+
 export default function Home() {
   return (
     <div>
-      <section className="w-full h-[90%]">
-        <HeroBackground>
+      <section className="w-full">
+        <HeroMapBackground>
           <MaxWidthWrapper>
         <div className="text-3xl md:text-7xl font-bold text-center mb-4">
         JSE Intelligence & Security Consultancy
         </div>
             <div className="text-center mt-10">
-              <TextEffect className="font-extralight text-sm md:text-4xl" words="Thinking of outsourcing your company's intelligence collection & analysis to help protect your people, brand & assets for a competitive rate? Then look no further..." />
+              <TextEffect className="font-extralight text-sm md:text-4xl text-white" words="Thinking of outsourcing your company's intelligence collection & analysis to help protect your people, brand & assets for a competitive rate? Then look no further..." />
         </div>
           </MaxWidthWrapper>
-        </HeroBackground>
+        </HeroMapBackground>
       </section>
       <section className="">
-      <div className="flex flex-col overflow-hidden">
+        <div className="flex flex-col overflow-hidden">
+
       <ContainerScroll
         titleComponent={
           <>
@@ -36,80 +76,11 @@ export default function Home() {
           </>
         }
           >
-            <div className="flex flex-col justify-center gap-10">
-              <Card>
-                  <h1 className="text-2xl font-semibold text-black dark:text-white">
-                    Assessment
-                    </h1>
-                    <p className="text-black dark:text-white italic">
-                    Intelligence & Threat assessment
-                </p>
-                <ul>
-                  <li className="text-black dark:text-white">
-                    Operational
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Tactical
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Strategic
-                    </li>
-                    </ul>                  
-                </Card>
-                <Card>
-                <h1 className="text-2xl font-semibold text-black dark:text-white">
-                    Advisory
-                    </h1>
-                    <p className="text-black dark:text-white italic">
-                    Sub-Saharan Africa Affairs Specialism
-                </p>
-                <ul>
-                  <li className="text-black dark:text-white">
-                  Political
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Economic
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Social
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Technological
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Environmental
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Legal
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Organisational
-                    </li>
-                    </ul> 
-              </Card>
-                <Card>
-                <h1 className="text-2xl font-semibold text-black dark:text-white">
-                    Assistance
-                    </h1>
-                    <p className="text-black dark:text-white italic">
-                    Consulting / supporting services
-                </p>
-                <ul>
-                  <li className="text-black dark:text-white">
-                  Setting up Threat Assessment Team
-
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Intelligence & Security Assessment Training
-                    </li>
-                  <li className="text-black dark:text-white">
-                  Evolving Global Security Landscape (country specific)
-                    </li>
-                  <li className="text-black dark:text-white">
-                    Government Policies (country specific) & Impact on Business Activities
-                    </li>
-                    </ul> 
-              </Card>
+            <div className="flex justify-center gap-10 flex-wrap">
+              {cardData.map((card, index) => (
+                <ImageCard key={index} card={card} />
+              ))}
+             
             </div>
           </ContainerScroll>
         </div>
@@ -124,8 +95,14 @@ export default function Home() {
             JSE Intelligence & Security Consultancy promises to be reliable, dependable, attention - to - detail, flexible, competitive, and most importantly adaptable to suit your business&apos;s requirement by offering the best services. This is a forward-looking consulting firm with extensive network across various Governments Departments; Corporate World; Media; NGOs; and Academia in most of the challenging terrains worldwide, and therefore able to offer steadfast service. 
           </p>
           </MaxWidthWrapper>
-          </SlideInText>
+        </SlideInText>
+        <div className="flex justify-center mt-10 md:justify-end">
+        <Quote>
+        Our Stability & Success Is Built On The &quot;CHIEF CORNERSTONE&quot;
+        </Quote>
+        </div>
       </section>
+
     </div>
   )
 }

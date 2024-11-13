@@ -6,14 +6,17 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-        <header className="w-full flex justify-between p-4 items-center bg-blue-500 fixed top-0 z-10 text-white">
+        <header className="w-full flex justify-between p-4 items-center bg-blue-500 fixed top-0 z-10 text-white h-[4rem]">
+            <Spacer>
+
              <Image
                 alt="logo"
                 src="/logo.webp"
                 width={140}
                 height={140}
+                priority
             />
-            <Spacer />
+            </Spacer>
             <nav className="hidden md:flex gap-6">
                 <Link href={"/"}>Home</Link>
                 <Link href={"/"}>Our Services</Link>
