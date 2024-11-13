@@ -2,11 +2,17 @@ import Link from "next/link";
 import Spacer from "./spacer";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ModalTrigger, ModalBody, ModalContent, ModalProvider } from "./modal";
+import Image from "next/image";
 
 export default function Header() {
     return (
-        <header className="w-full flex justify-between p-4 items-center bg-blue-400 fixed top-0 z-10 text-white">
-            <h1>Logo</h1>
+        <header className="w-full flex justify-between p-4 items-center bg-blue-500 fixed top-0 z-10 text-white">
+             <Image
+                alt="logo"
+                src="/logo.webp"
+                width={140}
+                height={140}
+            />
             <Spacer />
             <nav className="hidden md:flex gap-6">
                 <Link href={"/"}>Home</Link>

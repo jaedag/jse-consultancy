@@ -13,11 +13,11 @@ export default function Home() {
       <section className="w-full h-[90%]">
         <HeroBackground>
           <MaxWidthWrapper>
-        <div className="text-3xl md:text-7xl font-bold text-center">
+        <div className="text-3xl md:text-7xl font-bold text-center mb-4">
         JSE Intelligence & Security Consultancy
         </div>
-            <div>
-              <TextEffect className="font-extralight text-2xl md:text-4xl" words="Thinking of outsourcing your company's intelligence collection & analysis to help protect your people, brand & assets for a competitive rate? Then look no further..." />
+            <div className="text-center mt-6">
+              <TextEffect className="font-extralight text-sm md:text-4xl" words="Thinking of outsourcing your company's intelligence collection & analysis to help protect your people, brand & assets for a competitive rate? Then look no further..." />
         </div>
           </MaxWidthWrapper>
         </HeroBackground>
