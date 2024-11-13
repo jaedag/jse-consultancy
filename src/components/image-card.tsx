@@ -37,7 +37,7 @@ export default function ImageCard ({
             src={card.src}
             alt={card.title}
                 fill
-            className="object-cover absolute z-10 inset-0 object-center transition duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm"
+            className="object-cover absolute inset-0 object-center transition duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm"
             />
         </div>
     );
