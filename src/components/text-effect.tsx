@@ -15,7 +15,7 @@ export default function TextEffect({
   duration?: number;
 }){
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
   useEffect(() => {
     animate(
       "span",
@@ -28,6 +28,7 @@ export default function TextEffect({
         delay: stagger(0.2),
       }
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scope.current]);
 
   const renderWords = () => {

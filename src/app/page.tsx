@@ -30,7 +30,7 @@ export default function Home() {
             <h1 className="text-4xl font-semibold text-black dark:text-white">
               Our Priorities <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                The 3A's
+                The 3A&apos;s
               </span>
             </h1>
           </>
@@ -121,7 +121,7 @@ export default function Home() {
             Our Promise
           </h1>
           <p className="text-black dark:text-white">
-            JSE Intelligence & Security Consultancy promises to be reliable, dependable, attention - to - detail, flexible, competitive, and most importantly adaptable to suit your business’ requirement by offering the best services. This is a forward-looking consulting firm with extensive network across various Governments Departments; Corporate World; Media; NGOs; and Academia in most of the challenging terrains worldwide, and therefore able to offer steadfast service. 
+            JSE Intelligence & Security Consultancy promises to be reliable, dependable, attention - to - detail, flexible, competitive, and most importantly adaptable to suit your business&apos;s requirement by offering the best services. This is a forward-looking consulting firm with extensive network across various Governments Departments; Corporate World; Media; NGOs; and Academia in most of the challenging terrains worldwide, and therefore able to offer steadfast service. 
           </p>
           </MaxWidthWrapper>
           </SlideInText>
