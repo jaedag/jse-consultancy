@@ -10,7 +10,7 @@ type Card = {
 
 export default function ImageCard({ card }: { card: Card }) {
   return (
-    <div className="rounded-3xl bg-gray-100 h-80 w-72 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 cursor-pointer shadow-lg transform transition-transform duration-300 hover:scale-105">
+    <div className="rounded-3xl bg-gray-100 h-80 w-72 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 cursor-pointer shadow-lg transform transition-transform duration-300 hover:scale-105 active:scale-75 ">
       <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/80 via-transparent to-transparent z-30 pointer-events-none" />
       <div className="relative z-40 p-8 group">
         <p className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2">

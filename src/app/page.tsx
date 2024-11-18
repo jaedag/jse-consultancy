@@ -1,5 +1,5 @@
 import { ContainerScroll } from '@/components/container-scroll'
-import HeroMapBackground from '@/components/hero-map-background'
+import HeroBackground from '@/components/hero-background'
 import ImageCard from '@/components/image-card'
 import MaxWidthWrapper from '@/components/max-width-wrapper'
 import { Quote } from '@/components/quote'
@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div>
       <section className="w-full">
-        <HeroMapBackground>
+        <HeroBackground>
           <MaxWidthWrapper>
             <div className="text-3xl md:text-7xl font-bold text-center mb-4">
               JSE Intelligence & Security Consultancy
@@ -66,7 +66,7 @@ export default function Home() {
               />
             </div>
           </MaxWidthWrapper>
-        </HeroMapBackground>
+        </HeroBackground>
       </section>
       <section className="">
         <div className="flex flex-col overflow-hidden">

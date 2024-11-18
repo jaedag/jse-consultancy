@@ -1,7 +1,7 @@
 'use client'
 import SlideInText from './slide-in-text'
 
-export default function HeroMapBackground({
+export default function HeroBackground({
   children,
 }: {
   children: React.ReactNode
@@ -11,7 +11,7 @@ export default function HeroMapBackground({
       <div
         className="absolute inset-0 bg-cover bg-center bg-black opacity-80 overflow-hidden"
         style={{
-          backgroundImage: `url('/assets/nasa-1.jpg')`,
+          backgroundImage: `url('/assets/hero-image.webp')`,
           zIndex: -2,
         }}
       ></div>
