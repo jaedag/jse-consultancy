@@ -5,6 +5,7 @@ import MaxWidthWrapper from '@/components/max-width-wrapper'
 import { Quote } from '@/components/quote'
 import SlideInText from '@/components/slide-in-text'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+import Link from 'next/link'
 
 const cardData = [
   {
@@ -84,7 +85,9 @@ export default function Home() {
           >
             <div className="flex justify-center gap-10 flex-wrap mt-5">
               {cardData.map((card, index) => (
-                <ImageCard key={index} card={card} />
+                <Link key={index} href={'/'}>
+                  <ImageCard key={index} card={card} />
+                  </Link>
               ))}
             </div>
           </ContainerScroll>
