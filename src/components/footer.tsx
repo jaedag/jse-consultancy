@@ -6,7 +6,7 @@ import { Mail } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col md:flex-row justify-between p-4 items-center bg-blue-500 z-10 text-white py-10 gap-4">
+    <footer className="w-full flex flex-col md:flex-row justify-between p-4 items-center bg-blue-500 z-10 text-white py-10 gap-4 mt-auto">
       <Image alt="logo" src="/logo.webp" width={100} height={100} />
       <Spacer />
       <div className=" flex flex-col md:flex-row gap-4 items-center justify-center">

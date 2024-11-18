@@ -13,6 +13,7 @@ const cardData = [
     description: 'Intelligence & Threat assessment',
     src: '/assets/pexels-photo-5256523.webp',
     points: ['Operational', 'Tactical', 'Strategic'],
+    href: '/assessment',
   },
   {
     title: 'Advisory',
@@ -27,6 +28,7 @@ const cardData = [
       'Legal',
       'Organisational',
     ],
+    href: '/advisory',
   },
   {
     title: 'Assistance',
@@ -38,6 +40,8 @@ const cardData = [
       'Evolving Global Security Landscape (country specific)',
       'Government Policies (country specific) & Impact on Business Activities',
     ],
+    href: '/assistance',
+
   },
 ]
 
@@ -85,7 +89,7 @@ export default function Home() {
           >
             <div className="flex justify-center gap-10 flex-wrap mt-5">
               {cardData.map((card, index) => (
-                <Link key={index} href={'/'}>
+                <Link key={index} href={card.href}>
                   <ImageCard key={index} card={card} />
                   </Link>
               ))}
@@ -118,8 +122,8 @@ export default function Home() {
           </Quote>
         </div>
       </section>
-      <section className="bg-gray-800 bg-opacity-90 flex flex-col md:flex-row justify-center items-center  z-10  mt-10 py-6 gap-4">
-        <span className="mr-5 text-white font-semibold text-lg">
+      <section className="bg-gray-800 bg-opacity-90 flex flex-col md:flex-row justify-center items-center  z-10  mt-10 py-6 gap-4 px-4">
+        <span className="md:mr-5 text-white font-semibold text-lg text-center">
           Membership subscription for access to Threat Assessments
         </span>
         <a href="mailto:info@jsconsultancyis.com">

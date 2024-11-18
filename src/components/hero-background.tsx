@@ -7,7 +7,7 @@ export default function HeroBackground({
   children: React.ReactNode
 }) {
   return (
-    <div className="relative flex flex-col min-h-[50vh] md:h-[60vh] items-center justify-center text-white transition-bg mt-[4rem]">
+    <div className="relative flex flex-col min-h-[50vh] md:h-[60vh] items-center justify-center text-white transition-bg">
       <div
         className="absolute inset-0 bg-cover bg-center bg-black opacity-80 overflow-hidden"
         style={{
