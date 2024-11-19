@@ -4,8 +4,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { ModalTrigger, ModalBody, ModalContent, ModalProvider } from "./modal";
 import Image from "next/image";
 import NavigationDropDown from "./navigation-dropdown";
+import MobileNav from "./mobile-nav";
 
-export default function Header() {
+export default function Header() { 
     return (
         <header className="w-full flex justify-between p-4 items-center bg-blue-500 fixed top-0 z-10 text-white h-[4rem]">
             <Spacer>
@@ -32,12 +33,7 @@ export default function Header() {
                 </ModalTrigger>
                 <ModalBody className=" rounded-2xl mx-4 text-black w-[60%] items-center">
                     <ModalContent className="justify-center">
-                        <nav className="flex gap-6 flex-col justify-center grow w-fit align-center">
-                            <Link href={"/"}>Home</Link>
-                            <Link href={"/"}>Our Services</Link>
-                            <Link href={"/"}>About Us</Link>
-                            <Link href={"/"}>Publications</Link>
-                        </nav>
+                        <MobileNav />
                     </ModalContent>
                 </ModalBody>
             </ModalProvider>

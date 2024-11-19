@@ -41,7 +41,7 @@ const data = [
 export default function Advisory() {
     return (
         <section className="w-full grow">
-            <HeroBackground>
+            <HeroBackground className="md:h-[20rem]">
                 <MaxWidthWrapper>
                     <div className="text-3xl md:text-7xl font-bold text-center mb-4">
                         Advisory

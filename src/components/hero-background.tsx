@@ -1,13 +1,15 @@
 'use client'
+import { cn } from '@/lib/utils'
 import SlideInText from './ui/slide-in-text'
 
 export default function HeroBackground({
-  children,
+  children, className
 }: {
-  children: React.ReactNode
+    children: React.ReactNode,
+    className?: string
 }) {
   return (
-    <div className="relative flex flex-col min-h-[50vh] md:h-[60vh] items-center justify-center text-white transition-bg">
+    <div className={cn("relative flex flex-col min-h-[50vh] md:h-[60vh] items-center justify-center text-white transition-bg", className )}>
       <div
         className="absolute inset-0 bg-cover bg-center bg-black opacity-80 overflow-hidden"
         style={{

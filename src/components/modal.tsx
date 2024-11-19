@@ -193,6 +193,8 @@ const Overlay = ({ className }: { className?: string }) => {
 
 const CloseIcon = () => {
   const { setOpen } = useModal();
+
+  
   return (
     <button
       onClick={() => setOpen(false)}
