@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import MaxWidthWrapper from './max-width-wrapper'
-import SlideInText from './slide-in-text'
+import SlideInText from './ui/slide-in-text'
 
 export function Quote({ children }: { children: React.ReactNode }) {
   return (

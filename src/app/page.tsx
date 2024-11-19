@@ -3,7 +3,7 @@ import HeroBackground from '@/components/hero-background'
 import ImageCard from '@/components/image-card'
 import MaxWidthWrapper from '@/components/max-width-wrapper'
 import { Quote } from '@/components/quote'
-import SlideInText from '@/components/slide-in-text'
+import SlideInText from '@/components/ui/slide-in-text'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import Link from 'next/link'
 

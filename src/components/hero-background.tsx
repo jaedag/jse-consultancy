@@ -1,5 +1,5 @@
 'use client'
-import SlideInText from './slide-in-text'
+import SlideInText from './ui/slide-in-text'
 
 export default function HeroBackground({
   children,
